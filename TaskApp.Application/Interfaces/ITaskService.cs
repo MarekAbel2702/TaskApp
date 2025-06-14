@@ -11,7 +11,7 @@ namespace TaskApp.Application.Interfaces
     {
         Task<List<TaskItemDto>> GetAllTasksAsync();
         Task<TaskItemDto?> GetTaskByIdAsync(Guid id);
-        Task<TaskItemDto> CreateTaskAsync(Task item);
+        Task<TaskItemDto> CreateTaskAsync(CreateTaskItemDto dto);
         Task<bool> DeleteTaskAsync(Guid id);
         Task<bool> MarkAsDoneAsync(Guid id);
         Task<bool> MarkAsUndoneAsync(Guid id);
